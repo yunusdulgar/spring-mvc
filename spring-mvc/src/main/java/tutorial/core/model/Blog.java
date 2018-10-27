@@ -1,11 +1,12 @@
 package tutorial.core.model;
 
-public class BlogEntry {
+public class Blog {
 
   private Long id;
-  private String title;
-  private Blog blog;
 
+  private String title;
+
+  private Account owner;
 
   public Long getId() {
     return id;
@@ -23,11 +24,12 @@ public class BlogEntry {
     this.title = title;
   }
 
-  public Blog getBlog() {
-    return blog;
+  public Account getOwner() {
+    return owner;
   }
 
-  public void setBlog(Blog blog) {
-    this.blog = blog;
+  public void setOwner(Account owner) {
+    this.owner = owner;
   }
+
 }
